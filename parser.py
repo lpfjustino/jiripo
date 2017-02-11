@@ -81,7 +81,6 @@ def convert():
             if(file[-4:] == "docx"):
                 docx_to_html(filePath, outputFileName)
 
-
 def my_parse():
     for subdir, dirs, files in os.walk(rootdir):
         for file in files:
@@ -100,16 +99,15 @@ def my_parse():
                 #print(line)
                 fields = re.split(r'\t', line)
                 i = 0
-                if(len(fields) > 17):
+                if(len(fields) < 15):
                     print (len(fields))
                     for field in fields:
                         print Fields[i], " - ", field
                         i += 1
-            time.sleep(3)
-
+            #time.sleep(1)
 
 class Aluno:
-    def __constructor__(self, codigo, s, num, nome, sexo, datanasc, naturalidade, tipoensino, serie, turma, turno,
+    def __init__(self, codigo, s, num, nome, sexo, datanasc, naturalidade, tipoensino, serie, turma, turno,
                         filiacao, residencia, ano, dataelim, causaelim):
         self.codigo = codigo
         self.s = s
@@ -128,9 +126,18 @@ class Aluno:
         self.dataelim = dataelim
         self.causaelim = causaelim
 
+    @classmethod
+    def fromFile(cls, line):
+        fields = re.split(r'\t', line)
+        i = 0
+        #for field in fields:
+
+
+    def __init__(self):
+
 
     #print html
 
-convert()
-my_parse()
+#convert()
+#my_parse()
 print("ae");
