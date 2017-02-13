@@ -1,0 +1,77 @@
+C 0
+_2010.1.manha
+P 5
+_2010.1.noite
+P 8
+_2010.2.manha
+P 12
+_2010.2.noite
+P 4
+_2010.3.manha
+P 11
+_2010.3.noite
+P 10
+C 50
+_2011.1.manha
+P 5
+_2011.1.noite
+P 19
+_2011.2.manha
+P 9
+_2011.2.noite
+P 6
+_2011.3.manha
+P 13
+_2011.3.noite
+P 5
+C 107
+_2012.1.manha
+P 15
+_2012.1.noite
+P 5
+_2012.2.manha
+P 5
+_2012.2.noite
+P 8
+_2012.3.manha
+P 5
+_2012.3.noite
+P 6
+C 151
+_2013.1.manha
+P 13
+_2013.1.noite
+P 13
+_2013.2.manha
+P 11
+_2013.2.noite
+P 13
+_2013.3.manha
+P 4
+_2013.3.noite
+P 14
+C 219
+_2014.1.manha
+P 18
+_2014.2.manha
+P 9
+_2014.2.noite
+P 7
+_2014.3.manha
+P 11
+_2014.3.noite
+P 5
+C 269
+_2015.1.manha
+P 14
+_2015.1.noite
+P 7
+_2015.2.manha
+P 8
+_2015.2.noite
+P 6
+_2015.3.manha
+P 6
+_2015.3.noite
+P 8
+C 318

@@ -1,0 +1,49 @@
+tirar TD pt 1:
+(\d{6})</td><td>(I|R|RI)</td><td>(\d*)</td><td>((\w| )*)</td><td>(M|F)</td><td>(\d{2}/\d{2}/\d{4})</td><td>((\w| | -)*)</td><td>((\w| |-)*)</td><td>((\w| )*)</td><td>
+$1\t$2\t$3\t$4\t$6\t$7\t$10\t$12\t
+
+
+
+
+
+tirar TD pt 2
+(ER - ENSINO MÉDIO\t\dº ANO\t)(COMUNICAÇÃ)(</td>|<td>|<tr>|</tr>)*(MANHÃ|NOITE)(</td>|<td>|<tr>|</tr>)*((\w| )*)(</td>|<td>|<tr>|</tr>)*((\w| |-|\d{1})*)
+$6\t$1$2$9\t$4
+
+tirar TD pt 3
+(ER - ENSINO MÉDIO\t\dº ANO\t)(MEIO)(</td>|<td>|<tr>|</tr>)*(MANHÃ|NOITE)(</td>|<td>|<tr>|</tr>)*((\w| )*)(</td>|<td>|<tr>|</tr>)*((\w| |-|\d{1})*)
+
+
+pt 4
+(MANHÃ|NOITE)(</td>|</tr>|<td>|<tr>|<table>|</table>)+
+$1\t
+
+pt 5
+(\dº ano \d -)(</td>|<td>|<tr>|</tr>)*
+$1 
+
+pt6
+(ER - ENSINO MÉDIO\t\dº ANO\t\dº ANO \d - (MANHÃ|NOITE)\t)((\w| )*)(</td>|<td>|<tr>|</tr>)+(MANHÃ|NOITE)
+$3\t$1$6
+
+pt7
+(1º ANO)(	1º ANO )(\d*( -\tNOTURNO)?)
+$1 $3$2
+
+
+pt 7
+(M|F)((<li>|</li>|<ol>|</ol>)+)
+$1\t
+
+pt 8
+((<li>|</li>|<ol>|</ol>)+)(M|F)
+\t$3
+
+pt 9
+(\d{4}\t\d{2}/\d{2}/\d{4}\t)(Pai:(.)*(\1))
+$2
+
+
+FAZEEEEEEEEER
+data + er - ensino médio
+colocar \t-\t
